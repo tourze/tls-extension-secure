@@ -1,0 +1,28 @@
+{
+  "name": "tourze/tls-extension-secure",
+  "description": "TLS Secure Extensions Package",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "tourze/enum-extra": "0.1.*",
+    "tourze/tls-common": "0.0.*",
+    "tourze/tls-extension-naming": "0.0.*"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^2.1",
+    "phpunit/phpunit": "^11.5",
+    "tourze/phpunit-base": "1.*",
+    "tourze/phpunit-enum": "0.0.*",
+    "tourze/symfony-testing-framework": "0.0.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tourze\\TLSExtensionSecure\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tourze\\TLSExtensionSecure\\Tests\\": "tests/"
+    }
+  }
+}
