@@ -19,7 +19,7 @@ use Tourze\TLSExtensionSecure\Extension\NamedGroup;
  * - RFC 5246 (TLS 1.2) Section 7.4.1.4.1
  * - RFC 8446 (TLS 1.3) Section 4.2.7
  */
-class SupportedGroupsExtension extends AbstractExtension
+final class SupportedGroupsExtension extends AbstractExtension
 {
     /**
      * 支持的组列表
@@ -111,7 +111,7 @@ class SupportedGroupsExtension extends AbstractExtension
      */
     public static function decode(string $data): static
     {
-        $extension = new static(); // @phpstan-ignore-line
+        $extension = new static();
         $offset = 0;
 
         // 检查数据长度
